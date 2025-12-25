@@ -6,13 +6,13 @@
         <div class="swiper fv__swiper">
             <div class="swiper-wrapper fv__swiper-wrapper">
                 <div class="swiper-slide fv__swiper-slide">
-                    <img src="./assets/images/fv-1.png" alt="" class="fv__image" fetchpriority="high">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/fv-1.png" alt="" class="fv__image" fetchpriority="high">
                 </div>
                 <div class="swiper-slide fv__swiper-slide">
-                    <img src="./assets/images/fv-2.png" alt="" class="fv__image" fetchpriority="high">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/fv-2.png" alt="" class="fv__image" fetchpriority="high">
                 </div>
                 <div class="swiper-slide fv__swiper-slide">
-                    <img src="./assets/images/fv-3.png" alt="" class="fv__image" fetchpriority="high">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/fv-3.png" alt="" class="fv__image" fetchpriority="high">
                 </div>
             </div><!-- /.swiper-wrapper -->
             <!-- ページネーション -->
@@ -53,7 +53,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">静的サイト1</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -65,7 +65,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">静的サイト2</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -77,7 +77,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">静的サイト3</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -89,7 +89,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">静的サイト4</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -107,7 +107,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">動的サイト1</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -119,7 +119,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">動的サイト2</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -131,7 +131,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">動的サイト3</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -143,7 +143,7 @@
                                     <article class="works__card">
                                         <a href="#" class="works__card-link">
                                             <div class="works__card-image">
-                                                <img src="./assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
+                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/image-works.jpg" alt="動的サイト" class="works__card-img">
                                             </div><!-- /.works__card-image -->
                                             <h4 class="works__card-tile">動的サイト4</h4>
                                             <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
@@ -167,7 +167,7 @@
                     <!-- HTML5 -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-html.png" width="80" height="80" alt="HTML5" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-html.png" width="80" height="80" alt="HTML5" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">HTML5</h3>
@@ -179,7 +179,7 @@
                     <!-- CSS3 -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-css.png" width="80" height="80" alt="CSS3" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-css.png" width="80" height="80" alt="CSS3" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">CSS3</h3>
@@ -191,7 +191,7 @@
                     <!-- jQuery -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-jquery.png" width="80" height="80" alt="jQuery" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-jquery.png" width="80" height="80" alt="jQuery" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">jQuery</h3>
@@ -203,7 +203,7 @@
                     <!-- XD -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-wordpress.png" width="80" height="80" alt="WordPress" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-wordpress.png" width="80" height="80" alt="WordPress" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">WordPress</h3>
@@ -215,7 +215,7 @@
                     <!-- XD -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-xd.png" width="80" height="80" alt="XD" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-xd.png" width="80" height="80" alt="XD" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">XD</h3>
@@ -227,7 +227,7 @@
                     <!-- Figma -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-figma.png" width="80" height="80" alt="Figma" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-figma.png" width="80" height="80" alt="Figma" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">Figma</h3>
@@ -239,7 +239,7 @@
                     <!-- Sourcetree -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-sourcetree.png" width="80" height="80" alt="Sourcetree" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-sourcetree.png" width="80" height="80" alt="Sourcetree" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">Sourcetree</h3>
@@ -251,7 +251,7 @@
                     <!-- Photoshop -->
                     <li class="skills__item">
                         <div class="skills__item-image">
-                            <img src="./assets/images/logo-photoshop.png" width="80" height="80" alt="Photoshop" class="skills__item-logo">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo-photoshop.png" width="80" height="80" alt="Photoshop" class="skills__item-logo">
                         </div>
                         <div class="skills__item-text">
                             <h3 lang="en" class="skills__item-label">Photoshop</h3>
@@ -271,21 +271,21 @@
             <h2 class="l-section__title">自己紹介</h2>
             <div class="introduction__content">
                 <div class="introduction__images">
-                    <img src="./assets/images/photo-intoroduction.png" width="256" height="256" alt="自分の名前" class="introduction__profile-image">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/photo-intoroduction.png" width="256" height="256" alt="自分の名前" class="introduction__profile-image">
                     <ul class="introduction__social-list">
                         <li class="introduction__social-item">
                             <a href="#" class="introduction__social-link">
-                                <img src="./assets/images/icon-facebook.svg" width="32" height="32" alt="Facebook" class="introduction__social-icon">
+                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icon-facebook.svg" width="32" height="32" alt="Facebook" class="introduction__social-icon">
                             </a>
                         </li>
                         <li class="introduction__social-item sp-only">
                             <a href="#" class="introduction__social-link">
-                                <img src="./assets/images/icon-twitter.svg" width="32" height="32" alt="Twitter" class="introduction__social-icon">
+                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icon-twitter.svg" width="32" height="32" alt="Twitter" class="introduction__social-icon">
                             </a>
                         </li>
                         <li class="introduction__social-item pc-only">
                             <a href="#" class="introduction__social-link">
-                                <img src="./assets/images/icon-instagram.png" width="32" height="32" alt="Instagram" class="introduction__social-icon">
+                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icon-instagram.png" width="32" height="32" alt="Instagram" class="introduction__social-icon">
                             </a>
                         </li>
                     </ul>

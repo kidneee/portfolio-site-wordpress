@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
@@ -30,7 +30,7 @@
                 <h1 class="l-header__title">
                     <a href="./" class="l-header__link">
                         <span class="pc-only l-header__text">ポートフォリオ</span>
-                        <img src="./assets/images/logo.svg" width="256" height="80" alt="ポートフォリオサイト" class="sp-only l-header__logo">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo.svg" width="256" height="80" alt="ポートフォリオサイト" class="sp-only l-header__logo">
                     </a>
                 </h1>
                 <!-- ハンバガーメニューアイコン -->
