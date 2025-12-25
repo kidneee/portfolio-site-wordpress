@@ -57,3 +57,18 @@ document.addEventListener('click', (e) => {
     selectWrapper.classList.remove('is-open');
   }
 });
+
+// トップに戻るボタン
+// const togglePageTopBtn = () => {
+//   let scrollY = window.scrollY;
+//   const pageTop = document.getElementById('js-page-top');
+//   const triggerPoint = window.innerHeight * 0.87;
+
+//   if (scrollY >= triggerPoint) {
+//     pageTop.classList.add('active');
+//   } else {
+//     pageTop.classList.remove('active');
+//   }
+// };
+// window.addEventListener('scroll', togglePageTopBtn);
+// window.addEventListener('DOMContentLoaded', togglePageTopBtn);

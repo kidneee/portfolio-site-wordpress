@@ -11,7 +11,8 @@
   --text-secondary: #fff;
   --text-required: #e48484;
   --pc-text-32: clamp(1rem, 2.22vw, 2rem);
-  --pc-text-16: clamp(0.75rem, 1.11vw, 1rem);
+  --pc-text-16: clamp(0.875rem, 1.11vw, 1rem);
+  --sp-text-16: clamp(0.75rem, 3.74vw, 1rem);
 
   /* 背景色 */
   --bg-primary: #fff;
@@ -26,6 +27,10 @@
 
   /* PC 余白 左右 */
   --pc-width-40: clamp(16px, 2.78vw, 40px);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,6 +79,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  padding-block-end: 64px;
 }
 /*-------------------------
   Swiper
@@ -275,6 +281,7 @@ body {
   font-size: 1.5rem;
   font-weight: var(--bold);
   line-height: 1.5;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 769px) {
   .g-nav__link {
@@ -282,6 +289,12 @@ body {
     font-weight: var(--regular);
   }
 }
+
+/* ホバー時 */
+.g-nav__link:hover {
+  color: var(--text-required);
+}
+
 /*-------------------------
   お問い合わせボタン
 -------------------------*/
@@ -292,25 +305,42 @@ body {
   width: 190px;
   padding-block: 16px;
   background-color: var(--bg-pink);
+  flex-shrink: 0;
 }
 @media screen and (min-width: 769px) {
   .g-cta {
     width: 120px;
     height: 100%;
+    margin-left: auto;
+    padding-block: 0;
+    transition: 0.3s ease;
   }
 }
 
 .g-cta__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: 1.5rem;
   font-weight: var(--bold);
   line-height: 1.5;
   color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: 0.3s ease;
 }
 @media screen and (min-width: 769px) {
   .g-cta__button {
     font-size: var(--pc-text-16);
     font-weight: var(--regular);
   }
+}
+
+/* ホバー時 */
+.g-cta:hover {
+  
+  background-color: #ed5d5d;
 }
 
 /*-------------------------
@@ -430,11 +460,11 @@ body {
   制作実績 works
 -------------------------*/
 .works__inner {
-  padding-block: 64px 32px;
+  padding-block-end: 32px;
 }
 @media screen and (min-width: 769px) {
   .works__inner {
-    padding-block: 64px 0;
+    padding-block-end: 0;
   }
 }
 
@@ -449,6 +479,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 96px;
+  cursor: pointer;
 }
 
 .c-tabs__item.active {
@@ -866,4 +897,84 @@ body {
     align-items: center;
     gap: 32px;
   }
+}
+
+/*-------------------------
+  Footer
+-------------------------*/
+.l-footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-pink);
+}
+
+.l-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  padding-block: 8px 12px;
+  padding-inline: 16px clamp(16px, 14.02vw, 60px);
+}
+@media screen and (min-width: 768px) {
+  .l-footer__inner {
+    gap: 16px;
+    padding-block: 6px 16px;
+    padding-inline: 0;
+    width: 100%;
+  }
+}
+
+.l-footer__content {
+  width: 100%;
+}
+
+.l-footer__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .l-footer__nav-list {
+    gap: var(--pc-width-40);
+    max-width: 480px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+.l-footer__nav-link {
+  font-size: var(--sp-text-16);
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.l-footer__copyright {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/*-------------------------
+  トップに戻る
+-------------------------*/
+.page-top {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index: 1000;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .page-top {
+    right: clamp(40px, 11.11vw, 160px);
+    width: 64px;
+  }
+}
+
+.page-top__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }

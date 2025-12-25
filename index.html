@@ -1,72 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="ポートフォリオサイト">
-  <title>ポートフォリオ</title>
-  <!-- Google Fonts preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  </noscript>
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" media="print" onload="this.media='all'">
-</head>
 
-<body>
-  <!-- Header -->
-  <header class="l-header">
-    <div class="l-header__inner">
-      <div class="l-header__wrapper">
-        <h1 class="l-header__title">
-          <a href="./" class="l-header__link">
-            <span class="pc-only l-header__text">ポートフォリオ</span>
-            <img src="./assets/images/logo.svg" width="256" height="80" alt="ポートフォリオサイト" class="sp-only l-header__logo">
-          </a>
-        </h1>
-        <!-- ハンバガーメニューアイコン -->
-        <button id="hamburgerMenu" class="hamburger-menu" aria-label="メニュー" aria-expanded="false">
-          <span class="hamburger-menu__line"></span>
-        </button><!-- /.hamburger-menu -->
-      </div><!-- /.l-header__wrapper -->
-      <!-- ドロワーメニュー本体 -->
-      <div id="drawerMenu" class="drawer-menu">
-        <div class="drawer-menu__content">
-          <nav class="g-nav">
-            <ul class="g-nav__list">
-              <li class="g-nav__item">
-                <a href="./" class="g-nav__link">ホーム</a>
-              </li>
-              <li class="g-nav__item">
-                <a href="#introduction" class="g-nav__link">自己紹介</a>
-              </li>
-              <li class="g-nav__item">
-                <a href="#works" class="g-nav__link">制作実績</a>
-              </li>
-              <li class="g-nav__item">
-                <a href="#skills" class="g-nav__link">スキル</a>
-              </li>
-              <li class="g-nav__item">
-                <a href="#faq" class="g-nav__link">よくある質問</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- お問い合わせボタン -->
-          <div class="g-cta">
-            <a href="#contact" class="g-cta__button">お問い合わせ</a>
-          </div>
-        </div><!-- /.drawer-menu__content -->
-      </div><!-- /#drawerMenu -->
-    </div><!-- /.l-header__inner -->
-  </header>
 
   <main class="main">
     <!-- FV -->
@@ -105,15 +37,16 @@
           <div class="c-tabs">
             <ul class="c-tabs__list">
               <li class="c-tabs__item active" tabindex="0">
-                <h3 class="c-tabs__item-title">静的サイト</h3>
+                <span class="c-tabs__item-title">静的サイト</span>
               </li>
               <li class="c-tabs__item" tabindex="0">
-                <h3 class="c-tabs__item-title">動的サイト</h3>
+                <span class="c-tabs__item-title">動的サイト</span>
               </li>
             </ul>
             <div class="c-tabs__content">
               <!-- 静的サイト -->
               <div class="c-tabs__panel active">
+                <h3 class="sr-only">静的サイト制作実績</h3>
                 <ul class="works__list">
                   <li class="works__item">
                     <!-- 制作実績アイテム -->
@@ -158,7 +91,7 @@
                         <div class="works__card-image">
                           <img src="./assets/images/image-works.jpg" alt="静的サイト" class="works__card-img">
                         </div><!-- /.works__card-image -->
-                        <h4 class="works__card-tile">タイトル</h4>
+                        <h4 class="works__card-tile">静的サイト4</h4>
                         <p class="works__card-keywords">キーワード、キーワード、キーワード</p>
                       </a>
                     </article><!-- /.works__item -->
@@ -167,6 +100,7 @@
               </div><!-- /.c-tabs__panel -->
               <!-- 動的サイト -->
               <div class="c-tabs__panel">
+                <h3 class="sr-only">動的サイト制作実績</h3>
                 <ul class="works__list">
                   <li class="works__item">
                     <!-- 制作実績アイテム -->
@@ -236,7 +170,7 @@
                 <img src="./assets/images/logo-html.png" width="80" height="80" alt="HTML5" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">HTML5</span>
+                <h3 lang="en" class="skills__item-label">HTML5</h3>
                 <p class="skills__item-desc">
                   セマンティックコード、構造化マークアップ、デザイナーの意図を汲み取ってマークアップする、内部SEO対策、アクセシビリティ、ことが可能です。
                 </p>
@@ -248,7 +182,7 @@
                 <img src="./assets/images/logo-css.png" width="80" height="80" alt="CSS3" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">CSS3</span>
+                <h3 lang="en" class="skills__item-label">CSS3</h3>
                 <p class="skills__item-desc">
                   デザインを忠実に、BEMを使った設計思想でスタイルアップ
                 </p>
@@ -260,7 +194,7 @@
                 <img src="./assets/images/logo-jquery.png" width="80" height="80" alt="jQuery" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">jQuery</span>
+                <h3 lang="en" class="skills__item-label">jQuery</h3>
                 <p class="skills__item-desc">
                   CSSアニメーションとjQueryを組み合わせることで、ブラウザの読み込み負荷が最小限のUI/UXを実装することが出来ます。
                 </p>
@@ -272,7 +206,7 @@
                 <img src="./assets/images/logo-wordpress.png" width="80" height="80" alt="WordPress" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">WordPress</span>
+                <h3 lang="en" class="skills__item-label">WordPress</h3>
                 <p class="skills__item-desc">
                   既存テーマの編集だけでなく、自作テーマでウェブサイトを構築することが出来ます。また、カスタムタクソノミーやカスタムフィールドを応用して、クライアントが更新しやすいウェブサイトを構築することが可能です。
                 </p>
@@ -284,7 +218,7 @@
                 <img src="./assets/images/logo-xd.png" width="80" height="80" alt="XD" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">XD</span>
+                <h3 lang="en" class="skills__item-label">XD</h3>
                 <p class="skills__item-desc">
                   デザインカンプからマークアップするのはもちろん、ワイヤーフレームやプロトタイプを作成できます。画像の書き出し、
                 </p>
@@ -296,7 +230,7 @@
                 <img src="./assets/images/logo-figma.png" width="80" height="80" alt="Figma" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">Figma</span>
+                <h3 lang="en" class="skills__item-label">Figma</h3>
                 <p class="skills__item-desc">
                   デザインカンプからマークアップするのはもちろん、ワイヤーフレームやプロトタイプを作成できます。画像の書き出し、
                 </p>
@@ -308,7 +242,7 @@
                 <img src="./assets/images/logo-sourcetree.png" width="80" height="80" alt="Sourcetree" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">Sourcetree</span>
+                <h3 lang="en" class="skills__item-label">Sourcetree</h3>
                 <p class="skills__item-desc">
                   バージョン管理システムを使って、複数人でのウェブサイト構築を行うことが可能です。
                 </p>
@@ -320,7 +254,7 @@
                 <img src="./assets/images/logo-photoshop.png" width="80" height="80" alt="Photoshop" class="skills__item-logo">
               </div>
               <div class="skills__item-text">
-                <span lang="en" class="skills__item-label">Photoshop</span>
+                <h3 lang="en" class="skills__item-label">Photoshop</h3>
                 <p class="skills__item-desc">
                   写真の編集やデザインの作成、イラストの作成などができます。
                 </p>
@@ -503,9 +437,3 @@
       </div><!-- /.l-section__inner contact__inner -->
     </section>
   </main>
-
-  <!-- JS  -->
-  <script type="module" src="./assets/js/script.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-</body>
-</html>
