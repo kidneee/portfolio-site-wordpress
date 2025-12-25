@@ -26,13 +26,13 @@
     </div><!-- /.l-footer__inner -->
     <!-- トップに戻る -->
     <a href="#" class="page-top">
-        <img src="./assets/images/arrow-to-top.svg" width="56" height="56" alt="トップに戻ります。" class="page-top__img">
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow-to-top.svg" width="56" height="56" alt="トップに戻ります。" class="page-top__img">
     </a>
 </footer>
 
 <!-- JS  -->
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script type="module" src="./assets/js/script.js"></script>
+<script type="module" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 <?php wp_footer(); ?>
 </body>
 
