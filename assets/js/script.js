@@ -9,6 +9,24 @@ hamburgerBtn.addEventListener('click', () => {
   drawerMenu.classList.toggle('open');
 });
 
+// メニューリンククリック時にドロワーを閉じる
+const navLinks = document.querySelectorAll('.g-nav__link[href^="#"]');
+const ctaLink = document.querySelector('.g-cta__button[href^="#"]');
+
+const closeDrawer = () => {
+  hamburgerBtn.setAttribute('aria-expanded', 'false');
+  hamburgerBtn.classList.remove('open');
+  drawerMenu.classList.remove('open');
+};
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', closeDrawer);
+});
+
+if (ctaLink) {
+  ctaLink.addEventListener('click', closeDrawer);
+}
+
 // FV swiper
 const fvSwiper = new Swiper('.fv__swiper', {
   loop: true,
